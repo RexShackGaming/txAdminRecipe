@@ -362,6 +362,67 @@ tasks:
     ref: main
     dest: ./resources/[rexscripts]/rex-horsetrainer
     
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-houses
+    ref: main
+    dest: ./resources/[rexscripts]/rex-houses
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-lootnpc
+    ref: main
+    dest: ./resources/[rexscripts]/rex-lootnpc
+    
+  - action: waste_time # prevent github throttling
+    seconds: 10
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-mining
+    ref: main
+    dest: ./resources/[rexscripts]/rex-mining
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-npcdoctor
+    ref: main
+    dest: ./resources/[rexscripts]/rex-npcdoctor
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-storage
+    ref: main
+    dest: ./resources/[rexscripts]/rex-storage
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-townhall
+    ref: main
+    dest: ./resources/[rexscripts]/rex-townhall
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-trader
+    ref: main
+    dest: ./resources/[rexscripts]/rex-trader
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-trapfishing
+    ref: main
+    dest: ./resources/[rexscripts]/rex-trapfishing
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-trapper
+    ref: main
+    dest: ./resources/[rexscripts]/rex-trapper
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-wagons
+    ref: main
+    dest: ./resources/[rexscripts]/rex-wagons
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-wanted
+    ref: main
+    dest: ./resources/[rexscripts]/rex-wanted
+    
+  - action: waste_time # prevent github throttling
+    seconds: 10
+    
   # Remove and Add new items.lua
   - action: remove_path
     path: ./resources/[framework]/rsg-core/shared/items.lua
