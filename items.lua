@@ -4,11 +4,15 @@ RSGShared.Items = {
     -----------------------------------------------
     -- REX CUSTOM ITEMS
     -----------------------------------------------
-    campfire    = { name = 'campfire',    label = 'Camp Fire',   weight = 500, type = 'item', image = 'campfire.png',    unique = false, useable = true,  shouldClose = true, description = 'used to keep you warm and to cook on'},
-    raw_meat    = { name = 'raw_meat',    label = 'Raw Meat',    weight = 50,  type = 'item', image = 'raw_meat.png',    unique = false, useable = false, shouldClose = true, description = 'ready for cooking'},
-    raw_fish    = { name = 'raw_fish',    label = 'Raw Fish',    weight = 50,  type = 'item', image = 'raw_fish.png',    unique = false, useable = false, shouldClose = true, description = 'ready for cooking'},
-    cooked_meat = { name = 'cooked_meat', label = 'Cooked Meat', weight = 50,  type = 'item', image = 'cooked_meat.png', unique = false, useable = true,  shouldClose = true, description = 'ready for eating'},
-    cooked_fish = { name = 'cooked_fish', label = 'Cooked Fish', weight = 50,  type = 'item', image = 'cooked_fish.png', unique = false, useable = true,  shouldClose = true, description = 'ready for eating'},
+    campfire    = { name = 'campfire',    label = 'Camp Fire',       weight = 500, type = 'item', image = 'campfire.png',    unique = false, useable = true,  shouldClose = true, description = 'used to keep you warm and to cook on'},
+    raw_meat    = { name = 'raw_meat',    label = 'Raw Meat',        weight = 50,  type = 'item', image = 'raw_meat.png',    unique = false, useable = false, shouldClose = true, description = 'ready for cooking'},
+    raw_fish    = { name = 'raw_fish',    label = 'Raw Fish',        weight = 50,  type = 'item', image = 'raw_fish.png',    unique = false, useable = false, shouldClose = true, description = 'ready for cooking'},
+    cooked_meat = { name = 'cooked_meat', label = 'Cooked Meat',     weight = 50,  type = 'item', image = 'cooked_meat.png', unique = false, useable = true,  shouldClose = true, description = 'ready for eating'},
+    cooked_fish = { name = 'cooked_fish', label = 'Cooked Fish',     weight = 50,  type = 'item', image = 'cooked_fish.png', unique = false, useable = true,  shouldClose = true, description = 'ready for eating'},
+    flour_wheat = { name = 'flour_wheat', label = 'Wheat Flour',     weight = 100, type = 'item', image = 'flour_wheat.png', unique = false, useable = false, shouldClose = true, description = 'Cooking ingredient' },
+    milk        = { name = 'milk',        label = 'Milk',            weight = 100, type = 'item', image = 'milk.png',        unique = false, useable = true,  shouldClose = true, description = 'Dairy product' },
+    egg         = { name = 'egg',         label = 'Egg',             weight = 100, type = 'item', image = 'egg.png',         unique = false, useable = false, shouldClose = true, description = 'Cooking Ingredient' },
+    bread_sour  = { name = 'bread_sour',  label = 'Sourdough Bread', weight = 100, type = 'item', image = 'bread_sour.png',  unique = false, useable = true,  shouldClose = true, description = 'Oven Fresh' },
 
     -----------------------------------------------
     -- CORE ITEMS

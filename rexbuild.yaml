@@ -309,6 +309,19 @@ tasks:
     ref: main
     dest: ./resources/[rexscripts]/rex-campfire
     
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-codes
+    ref: main
+    dest: ./resources/[rexscripts]/rex-codes
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-cooking
+    ref: main
+    dest: ./resources/[rexscripts]/rex-cooking
+    
+  - action: waste_time # prevent github throttling
+    seconds: 10
+    
   # Remove and Add new items.lua
   - action: remove_path
     path: ./resources/[framework]/rsg-core/shared/items.lua

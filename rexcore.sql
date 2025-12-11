@@ -268,3 +268,15 @@ CREATE TABLE IF NOT EXISTS `address_book` (
   `owner`  VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS `rex_codes` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `type` varchar(50) NOT NULL,
+  `item` varchar(255) NOT NULL,
+  `amount` int(255) NOT NULL,
+  `code` varchar(255) NOT NULL,
+  `admin` varchar(255) NOT NULL,
+  `uses` int(255) NOT NULL,
+  `redeemed_players` varchar(255) NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
