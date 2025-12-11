@@ -352,6 +352,16 @@ tasks:
     ref: main
     dest: ./resources/[rexscripts]/rex-goldpanning
     
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-guarma
+    ref: main
+    dest: ./resources/[rexscripts]/rex-guarma
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-horsetrainer
+    ref: main
+    dest: ./resources/[rexscripts]/rex-horsetrainer
+    
   # Remove and Add new items.lua
   - action: remove_path
     path: ./resources/[framework]/rsg-core/shared/items.lua
@@ -359,6 +369,14 @@ tasks:
   - action: move_path
     src: ./tmp/REXTemp/items.lua
     dest: ./resources/[framework]/rsg-core/shared/items.lua
+    
+  # Remove and Add new jobs.lua
+  - action: remove_path
+    path: ./resources/[framework]/rsg-core/shared/jobs.lua
+    
+  - action: move_path
+    src: ./tmp/REXTemp/jobs.lua
+    dest: ./resources/[framework]/rsg-core/shared/jobs.lua
     
   # Remove and Add new images folder
   - action: remove_path
