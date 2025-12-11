@@ -322,6 +322,11 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 10
     
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-crafting
+    ref: main
+    dest: ./resources/[rexscripts]/rex-crafting
+    
   # Remove and Add new items.lua
   - action: remove_path
     path: ./resources/[framework]/rsg-core/shared/items.lua
