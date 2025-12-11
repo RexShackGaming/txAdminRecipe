@@ -318,7 +318,7 @@ tasks:
     
   - action: move_path
     src: ./tmp/REXTemp/images
-    dest: ./resources/[framework]/rsg-inventory/html/
+    dest: ./resources/[framework]/rsg-inventory/html/images
     
   # Remove Old Chat
   - action: remove_path
