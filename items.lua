@@ -4,7 +4,11 @@ RSGShared.Items = {
     -----------------------------------------------
     -- REX CUSTOM ITEMS
     -----------------------------------------------
-    raw_meat = { name = 'raw_meat', label = 'Raw Meat', weight = 50, type = 'item', image = 'raw_meat.png', unique = false, useable = false, shouldClose = true, description = 'raw meat ready for cooking'},
+    campfire    = { name = 'campfire',    label = 'Camp Fire',   weight = 500, type = 'item', image = 'campfire.png',    unique = false, useable = true,  shouldClose = true, description = 'used to keep you warm and to cook on'},
+    raw_meat    = { name = 'raw_meat',    label = 'Raw Meat',    weight = 50,  type = 'item', image = 'raw_meat.png',    unique = false, useable = false, shouldClose = true, description = 'ready for cooking'},
+    raw_fish    = { name = 'raw_fish',    label = 'Raw Fish',    weight = 50,  type = 'item', image = 'raw_fish.png',    unique = false, useable = false, shouldClose = true, description = 'ready for cooking'},
+    cooked_meat = { name = 'cooked_meat', label = 'Cooked Meat', weight = 50,  type = 'item', image = 'cooked_meat.png', unique = false, useable = true,  shouldClose = true, description = 'ready for eating'},
+    cooked_fish = { name = 'cooked_fish', label = 'Cooked Fish', weight = 50,  type = 'item', image = 'cooked_fish.png', unique = false, useable = true,  shouldClose = true, description = 'ready for eating'},
 
     -----------------------------------------------
     -- CORE ITEMS

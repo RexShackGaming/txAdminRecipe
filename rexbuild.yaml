@@ -304,6 +304,11 @@ tasks:
     ref: main
     dest: ./resources/[rexscripts]/rex-butcher
     
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-campfire
+    ref: main
+    dest: ./resources/[rexscripts]/rex-campfire
+    
   # Remove and Add new items.lua
   - action: remove_path
     path: ./resources/[framework]/rsg-core/shared/items.lua
