@@ -293,6 +293,24 @@ tasks:
     src: https://github.com/RexShackGaming/rex-chat
     ref: main
     dest: ./resources/[rexscripts]/rex-chat
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-blackmarket
+    ref: main
+    dest: ./resources/[rexscripts]/rex-blackmarket
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-butcher
+    ref: main
+    dest: ./resources/[rexscripts]/rex-butcher
+    
+  - action: move_path
+    src: ./tmp/REXTemp/items.lua
+    dest: ./resources/[framework]/rsg-core/shared/items.lua
+    
+  - action: move_path
+    src: ./tmp/REXTemp/images/*.png
+    dest: ./resources/[framework]/rsg-inventory/html/images/
 
   # Remove Old Chat
   - action: remove_path
