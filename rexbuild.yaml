@@ -327,6 +327,31 @@ tasks:
     ref: main
     dest: ./resources/[rexscripts]/rex-crafting
     
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-delivery
+    ref: main
+    dest: ./resources/[rexscripts]/rex-delivery
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-digging
+    ref: main
+    dest: ./resources/[rexscripts]/rex-digging
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-fasttravel
+    ref: main
+    dest: ./resources/[rexscripts]/rex-fasttravel
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-fishmonger
+    ref: main
+    dest: ./resources/[rexscripts]/rex-fishmonger
+    
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-goldpanning
+    ref: main
+    dest: ./resources/[rexscripts]/rex-goldpanning
+    
   # Remove and Add new items.lua
   - action: remove_path
     path: ./resources/[framework]/rsg-core/shared/items.lua
