@@ -268,7 +268,3 @@ CREATE TABLE IF NOT EXISTS `address_book` (
   `owner`  VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
----------------------------------
--- REX Scripts SQL
----------------------------------
