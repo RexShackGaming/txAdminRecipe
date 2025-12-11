@@ -304,14 +304,22 @@ tasks:
     ref: main
     dest: ./resources/[rexscripts]/rex-butcher
     
+  # Remove and Add new items.lua
+  - action: remove_path
+    path: ./resources/[framework]/rsg-core/shared/items.lua
+    
   - action: move_path
     src: ./tmp/REXTemp/items.lua
     dest: ./resources/[framework]/rsg-core/shared/items.lua
     
+  # Remove and Add new images folder
+  - action: remove_path
+    path: ./resources/[framework]/rsg-inventory/html/images
+    
   - action: move_path
-    src: ./tmp/REXTemp/images/*.png
-    dest: ./resources/[framework]/rsg-inventory/html/images/
-
+    src: ./tmp/REXTemp/images
+    dest: ./resources/[framework]/rsg-inventory/html/
+    
   # Remove Old Chat
   - action: remove_path
     path: ./resources/[cfx-default]/[gameplay]/chat
