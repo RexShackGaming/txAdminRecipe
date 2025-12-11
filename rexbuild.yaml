@@ -2,28 +2,28 @@ $engine: 3
 $onesync: on
 name: REX RedM Build
 version: 1.0.0
-author: Rexshack Gaming
+author: RexShack
 description: REX RedM Server Build (RSG)
 
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/Rexshack-RedM/txAdminRecipe
+    src: https://github.com/RexShackGaming/txAdminRecipe
     ref: main
-    dest: ./tmp/RSGCore
+    dest: ./tmp/REXTemp
 
   - action: move_path
-    src: ./tmp/RSGCore/server.cfg
+    src: ./tmp/REXTemp/server.cfg
     dest: ./server.cfg
 
   - action: move_path
-    src: ./tmp/RSGCore/myLogo.png
+    src: ./tmp/REXTemp/myLogo.png
     dest: ./myLogo.png
 
   # Prepare Database
   - action: connect_database
   - action: query_database
-    file: ./tmp/RSGCore/rsgcore.sql
+    file: ./tmp/REXTemp/rexcore.sql
 
   # Downloading Standalone Resources  
   - action: download_github
@@ -42,11 +42,6 @@ tasks:
     dest: ./resources/[standalone]/ox_lib
     ref: main
     src: https://github.com/Rexshack-RedM/ox_lib
-
-  - action: download_github
-    dest: ./resources/[standalone]/progressbar
-    ref: main
-    src: https://github.com/Rexshack-RedM/progressbar
 
   - action: download_github
     dest: ./resources/[standalone]/PolyZone
@@ -77,16 +72,6 @@ tasks:
     dest: ./resources/[standalone]/menu_base
     ref: main
     src: https://github.com/Rexshack-RedM/menu_base
-
-  - action: download_github
-    dest: ./resources/[standalone]/chat-redm
-    ref: main
-    src: https://github.com/Rexshack-RedM/chat-redm
-
-  - action: download_github
-    dest: ./resources/[standalone]/rNotify
-    ref: main
-    src: https://github.com/RexShack/rNotify
 
   - action: download_github
     dest: ./resources/[standalone]/ox_target
@@ -301,6 +286,13 @@ tasks:
     src: https://github.com/Rexshack-RedM/redm-ymaps
     ref: main
     dest: ./resources/[mapmods]/redm-ymaps
+    
+  # Download REX resources
+  
+  - action: download_github
+    src: https://github.com/RexShackGaming/rex-chat
+    ref: main
+    dest: ./resources/[rexscripts]/rex-chat
 
   # Remove Old Chat
   - action: remove_path
